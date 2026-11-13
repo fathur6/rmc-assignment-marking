@@ -1,0 +1,4 @@
+#!/bin/sh
+# Run the RMC Assignment Marking Module with its bundled environment.
+ROOT=$(CDPATH= cd -- "$(dirname -- "$0")/.." && pwd)
+exec "$ROOT/.venv/bin/python" "$ROOT/rmc.py" "$@"

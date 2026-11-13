@@ -1,0 +1,44 @@
+# RMC Assignment Marking Module - user configuration.
+# Edit this file; every path is resolved relative to this module directory.
+
+course:
+  code: PPS10203
+  title: Research Methodology
+  semester: SEM II 2025/2026
+  assignment_weight: 60
+  final_exam_weight: 40
+
+marking:
+  # Name printed on the annotated manuscript and the marking form.
+  evaluator: Fathurrahman Lananan
+  # deepseek-flash is the cost-efficient default; deepseek-v4-pro gives stronger
+  # judgement at a higher price. Both accept the full manuscript (1M context).
+  model: deepseek-flash
+  api_base: https://api.deepseek.com
+  api_key_env: DEEPSEEK_API_KEY
+  temperature: 0.0
+  max_output_tokens: 16000
+  timeout_seconds: 300
+  # Target number of margin comments per manuscript, and hard bounds.
+  comments_min: 8
+  comments_max: 14
+  # A manuscript longer than this many characters is truncated with a warning.
+  max_input_chars: 240000
+  # Below this many extracted characters the PDF is treated as image-only.
+  min_text_chars: 1200
+  # Mark a result for human review when confidence falls below this value.
+  review_confidence_threshold: 0.7
+
+batch:
+  concurrency: 4
+  # Drop manuscripts here, then run `rmc batch` with no arguments.
+  inbox: "~/Documents/RMC-Marking/inbox"
+  # Output root: one folder per student plus gradebook.csv and review.html.
+  output_dir: "~/Documents/RMC-Marking/marked"
+  # Folder names are "<matric> - <name>" when both are known.
+  folder_pattern: "{matric} - {name}"
+  overwrite: false
+
+paths:
+  form_template: assets/marking-form.pdf
+  calibration: prompts/calibration.json

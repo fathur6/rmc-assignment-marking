@@ -1,0 +1,66 @@
+{
+  "note": "Moderated calibration sample. A complete but generic proposal: all components present, broad title, methodology named but not operationalised, descriptive literature review, several uncited reference entries, and a generic ethics section. Official marks: 6, 5, 5, 6, 5.",
+  "criteria": {
+    "clo2_org": {
+      "score": 6,
+      "evidence": "Complete structure: background, problem statement, significance, questions, objectives, literature review, methodology, Gantt chart, ethics, references.",
+      "rationale": "All components are present and readable, but the problem statement runs long and repeats the introduction, so coherence is good rather than excellent."
+    },
+    "clo2_align": {
+      "score": 5,
+      "evidence": "The central question and the four listed research questions do not match, and the objectives are not one-to-one with them.",
+      "rationale": "The title is broad and success/failure is never defined operationally; alignment across title, problem, questions, objectives and methodology is only moderate."
+    },
+    "clo2_lit": {
+      "score": 5,
+      "evidence": "The review proceeds factor by factor, one paragraph per driver, without comparing or synthesising sources.",
+      "rationale": "Literature is relevant but descriptive; the gap is asserted rather than established through critical discussion."
+    },
+    "clo3_integrity": {
+      "score": 6,
+      "evidence": "Fifteen references in broadly APA style, but several entries are never cited in the text and some citations are broken.",
+      "rationale": "Citation practice is appropriate overall with several inaccuracies, matching the Good band rather than Excellent."
+    },
+    "clo3_ethics": {
+      "score": 5,
+      "evidence": "Ethics covers voluntariness, confidentiality, anonymity and secure data handling in general terms.",
+      "rationale": "Awareness is basic and generic: the approval pathway is non-committal and the risks are not tied to this study."
+    }
+  },
+  "comments": [
+    {
+      "page": 1,
+      "anchor": "An Analytical Study on the Factors Contributing to the",
+      "clo": "CLO2",
+      "category": "Title",
+      "comment": "Title is too broad: no country, sector or business population. Narrow it and define operationally what counts as 'success' and 'failure' (e.g. survival beyond 3 years, profitability)."
+    },
+    {
+      "page": 2,
+      "anchor": "Several studies have addressed the dynamics",
+      "clo": "CLO3",
+      "category": "Citation",
+      "comment": "'Several studies have addressed...' gives no author, year or source. Cite the studies from your reference list so the claimed gap is evidenced."
+    },
+    {
+      "page": 10,
+      "anchor": "descriptive analytical approach",
+      "clo": "CLO2",
+      "category": "Methodology",
+      "comment": "'Descriptive analytical approach' is not a recognised design. State the design, sampling frame, sample size, instruments and analysis plan, with justification."
+    }
+  ],
+  "strengths": [
+    "Complete proposal structure from background through references.",
+    "Recent, relevant reference list in broadly APA format.",
+    "Clear awareness of internal and external drivers of small business outcomes.",
+    "Ethics section addresses voluntariness, confidentiality, anonymity and secure data handling."
+  ],
+  "improvements": [
+    "Narrow the title and define success and failure operationally; one set of research questions only.",
+    "Replace the generic descriptive design with a justified design, sampling frame, sample size, instruments and analysis plan.",
+    "Cite the studies referred to in the introduction and problem statement; remove or cite unused reference entries.",
+    "Convert the literature review from descriptive summaries into a critical, thematic synthesis that establishes the gap.",
+    "Make the ethics section study-specific and state the approval pathway before data collection."
+  ]
+}
